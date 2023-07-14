@@ -55,11 +55,14 @@
 // ? || - OR(və ya)  true<->true = true, true<->false = true,false<->true=true, false<->false = false
 // ? || - OR(və ya)  1 <-> 1 = 1,1<->0 = 1,0<->1 = 1,0<->0 = 0
 
-// let b = 12
+// let b = 16
 
-// if(b<15 || b>30){
+// if(b<15){
 //   console.log("b 15 den kicikdir")
-// }else{
+// }else if(b>30){
+//   console.log("b 30 dan boyukdur")
+// }
+// else{
 //   console.log("b 15 ile 30 aralqindadir")
 // }
 // let a = 9;
@@ -67,16 +70,14 @@
 
 // ! alert, prompt, confirm
 
-
-
 if (confirm("Admin kimi daxil olmaq isteyirsiniz? ")) {
   let login = prompt("parolu daxil edin");
-  if(Number(login) === 1234){
-    alert("xos geldin admin")
-  }else{
-    alert("Parol yanlisidr")
+  if (Number(login) === 1234) {
+    alert("xos geldin admin");
+  } else {
+    alert("Parol yanlisidr");
   }
 } else {
-  let user = prompt("Adinizi yazin")
-  alert(`${user} xos geldin`)
+  let user = prompt("Adinizi yazin");
+  alert(`${user} xos geldin`);
 }

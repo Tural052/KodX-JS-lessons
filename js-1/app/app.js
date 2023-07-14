@@ -3,7 +3,7 @@
 // DOM - Document Object Model
 
 // let,var və const 
-// ! Diger tiplər Float,Double,Int
+// ! Diger tiplər Float,Double,Int,doubleInt
 // const container = document.getElementById("div")
 // const input = document.getElementById("text")
 // let a=5
@@ -20,7 +20,7 @@
 
 // ! Js-də type növləri:
 /* 
-? number,string,boolen(true,false),array(massiv),Obyekt(Obj),null,undefined, NaNm,
+? number,string,boolen(true,false),array(massiv),Obyekt(Obj),null,undefined, NaN,
 ? Primiteve : number,string,boolen(true,false),null,undefined, NaN-Not a Number
 ? Non-Primiteve,Reference : array(massiv),Obyekt(Obj)
 */
