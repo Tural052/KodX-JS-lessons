@@ -84,5 +84,36 @@ let arr_sum = 0;
 // console.log(Math.trunc(2.5))
 
 // ! Random
-let a=Math.floor(Math.random()*11)
-console.log(a+40)
+// let a=Math.floor(Math.random()*11)
+// console.log(a+40)
+
+
+// let n1=55;
+// for(let i=1;i<=n1;i++){
+// //    if(i%2===0){
+// //     console.log(i)
+// //    }
+//     i%2===0?console.log(i):null
+// }
+
+// let str2 = "don’t know wh";
+// for(let i=0;i<str2.length;i++){
+//     switch(str2[i]){
+//         case 'y':
+//             console.log("Yes");
+//             return;
+//     }
+// }
+// console.log("No")
+
+
+// let n=5;
+// let hasil = 1;
+// for(let i=1;i<=n;i++){
+//     hasil*=i;
+// }
+
+// console.log(hasil)
+
+
+
