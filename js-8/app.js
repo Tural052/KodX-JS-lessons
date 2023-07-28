@@ -40,25 +40,26 @@ const form = document.querySelector(".todo-form");
 const input = document.getElementById("todo");
 const addTodo = document.getElementById("add-todo");
 const todoList = document.getElementById("todo-list");
-const container = document.querySelector(".container")
+const container = document.querySelector(".container");
 
-form.addEventListener("submit", formSubmit);
-todoList.addEventListener("click",deteListItem)
+eventLister()
 
-
-
-
-function formSubmit(event) {
-  let todo = input.value.trim().toUpperCase();
-  if (todo !== "") {
-    addTodoList(todo);
-    input.value = "";
-  } else {
-    alertFunction();
-  }
-
-  event.preventDefault();
+function eventLister() {
+  form.addEventListener("submit", (event) => {
+    let todo = input.value.trim().toUpperCase();
+    if (todo !== "") {
+      addTodoList(todo);
+      input.value = "";
+    } else {
+      alertFunction();
+    }
+  
+    event.preventDefault();
+  });
+  todoList.addEventListener("click", deteListItem);
 }
+
+
 
 function addTodoList(parmasValue) {
   todoList.innerHTML += `
@@ -71,23 +72,17 @@ function addTodoList(parmasValue) {
 function alertFunction() {
   let div = document.createElement("div");
   div.className = "error-box";
-  div.textContent  = "Bos input !!!"
-  container.appendChild(div)
+  div.textContent = "Bos input !!!";
+  container.appendChild(div);
   setTimeout(() => {
-    div.remove()
-    console.log("aa")
+    div.remove();
+    console.log("aa");
   }, 2000);
-
 }
 
-
-function deteListItem(e){
-    let target = e.target;
-    if(target.className === "fa-solid fa-xmark"){
-       target.parentElement.remove()
-    }
+function deteListItem(e) {
+  let target = e.target;
+  if (target.className === "fa-solid fa-xmark") {
+    target.parentElement.remove();
+  }
 }
-
-// arr = [56,13,5,65,214]
-// arr2 = []
-
