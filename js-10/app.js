@@ -24,6 +24,8 @@ function eventLister() {
 //   console.log(localStorageGetTodo("todo"));
 // };
 
+
+
 function todoListSubmit(event) {
   let todo = input.value.trim().toUpperCase();
   if (todo !== "") {
