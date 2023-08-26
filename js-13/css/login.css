@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: #f8f8f8;
+    padding: 150px 0;
+}
+
+div {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #222;
+    background: #f8f8f8;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.input-lable {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-lable>i {
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: Poppins;
+    outline: none;
+}
+
+input[type=checkbox]:not(old) {
+    width: 1em;
+    display: inline;
+}
+
+p {
+    display: inline;
+
+}
+
+button {
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border: none;
+    width: auto;
+    padding: 18px 41px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+button:hover {
+    background-color: #4091dd;
+}
+
+.loginwith {
+    align-items: center;
+    margin-top: 80px;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul>li {
+    padding: 5px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+ul>li>i {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+ul>li>i:hover {
+    cursor: pointer;
+
+}
+
+.fa-brands fa-square-facebook {
+    background: #3b5998;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+}
+
+span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.button {
+    margin-bottom: 0;
+}
+
+.signin {
+    width: 900px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 15px 16.83px .17px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, .05);
+    -o-box-shadow: 0 15px 16.83px .17px rgba(0, 0, 0, .05);
+    -ms-box-shadow: 0 15px 16.83px .17px rgba(0, 0, 0, .05);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+}
+
+.signin-container {
+    padding-top: 87px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.signin-leftpart {
+    margin-left: 110px;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-div {
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signin-leftpart>a {
+    font-size: 14px;
+    color: #222;
+    display: block;
+    text-align: center;
+}
+
+.signin-rightpart {
+    margin-right: 90px;
+    margin-left: 80px;
+    width: 50%;
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 33px;
+    color: #222;
+    font-family: Poppins;
+    font-size: 36px;
+    display: block;
+}
+
+form {
+    width: 100%;
+    display: block;
+    margin-top: 0em;
+}
+
+@media screen and (max-width: 1200px) {
+    .signin {
+        width: calc(100% - 30px);
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
+    }
+
+    .signin-rightpart, .signin-leftpart {
+        width: auto;
+    }
+
+    .signin-leftpart {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50px;
+        order: 2;
+        -moz-order: 2;
+        -webkit-order: 2;
+        -o-order: 2;
+        -ms-order: 2;
+    }
+
+    .signin-rightpart {
+        order: 1;
+        -moz-order: 1;
+        -webkit-order: 1;
+        -o-order: 1;
+        -ms-order: 1;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 30px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .loginwith, ul,li {
+        text-align: center;
+        justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
+    }
+    .button{
+        text-align: center;
+    }
+}
+
+/* The container */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #999;
+  }
+
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+  
+  /* Show the checkmark when checked */
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 2.5px;
+    height: 5px;
+    border: solid #222;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 

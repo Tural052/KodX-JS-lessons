@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="signup">
+        <div class="signup-container">
+          <div class="signup-leftpart">
+            <h2>Sign up</h2>
+            <form>
+              <div>
+                <input
+                  placeholder="Your Name"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+          
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div>
+                <input
+                  placeholder="Your Email"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="password-box">
+                <input
+                  placeholder="Password"
+                  type="password"
+                  id="user-password"
+                  name="user-password"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div>
+                <input
+                  placeholder="Repeat your password"
+                  type="password"
+                  id="repeat-password"
+                  name="repeat-password"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div>
+                <!-- <input type="checkbox" /> -->
+                <p>
+                  I agree all statements in <a href="#">Terms of service</a>
+                </p>
+              </div>
+              <div class="button">
+                <button class="disable-button">Register</button>
+              </div>
+            </form>
+          </div>
+          <div class="signup-rightpart">
+            <div class="image-div">
+              <img src="./photos/signup-image.jpg" alt="" />
+            </div>
+            <a href="./login.html">I am already member</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>
